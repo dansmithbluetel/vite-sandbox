@@ -1,17 +1,17 @@
-import InviteMembers2 from "../components/InviteMembers2";
+import InviteMembersVuex from "../components/InviteMembersVuex";
 
 export default {
-    component: InviteMembers2,
-    title: 'Components/InviteMembers2'
+    component: InviteMembersVuex,
+    title: 'Components/InviteMembersVuex'
 }
 
 //👇 We create a “template” of how args map to rendering
 const Template = (args, { argTypes }) => ({
-    components: { InviteMembers2 },
+    components: { InviteMembersVuex },
     props: Object.keys(argTypes),
     // Storybook provides all the args in a $props variable.
     // Each arg is also available as their own name.
-    template: '<InviteMembers2 v-bind="$props" v-on="$props" />',
+    template: '<InviteMembersVuex v-bind="$props" v-on="$props" />',
 });
 
 //👇 Each story then reuses that template
